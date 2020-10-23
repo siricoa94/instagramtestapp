@@ -8,7 +8,7 @@
     "start": "node server/server.js",
     "compile": "webpack --mode production",
     "watch": "webpack --watch",
-    "heroku-postbuild": "npm run comile"
+    "heroku-postbuild": "npm run compile"
   },
   "repository": {
     "type": "git",
