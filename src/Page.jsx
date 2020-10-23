@@ -1,21 +1,13 @@
 import React from 'react';
-import Contents from './About.jsx';
+import Contents from './Contents.jsx';
 
-function NavBar() {
-  return (
-    <nav>
-      <a href="/">Home</a>
-      <a href="/#/about">About</a>
-      <a href="/#/contact">Contact</a>
-    </nav>
-  )
-}
+import NavBar from './Nav.jsx';
 
 export default function page () {
     return(
         <div>
-            <NavBar />
             <Contents />
+            <NavBar />
         </div>
     );
 }

@@ -1,20 +1,63 @@
+.pageContainer {
+    padding-bottom: 20%;
+    background-color: rgba(255, 255, 255, 0.952);
+    width: 80%;
+    margin-left: 10%;
+}
 body {
     margin: 0%;
     padding: 0%;
     border: 0%;
     font-family: 'Mate SC', serif;
 }
+.picturecontainer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    background-image: url('./siricoProducLogo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+.flexContainer {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, 0.952); */
+}
+#aboutWelcomeImage {
+    background-image: url('./IMG_0456.JPG');
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#navDiv {
+    position: fixed;
+    bottom: 0%;
+    text-align: center;
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+}
+.titleContent {
+    width: 80%;
+    margin-left: 10%;
+}
 button {
     width: 95px;
-    height: 35px;
+    height: 30px;
     margin: 5px;
-    border-radius: 25rem;
+    border-radius: .5rem;
     color: white;
     text-shadow: 1px 1px rgb(78, 78, 78);
-    border: none;
+    border: white .8px solid;
     /* background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(69, 115, 243)); */
-    background-color:rgb(69, 115, 243);
-    box-shadow: 1px 2px 0px 0px rgb(70, 70, 70);
+    background-color: rgb(36, 36, 36);
+    /* box-shadow: 1px 2px 0px 0px rgb(70, 70, 70); */
     outline: none;
 }
 button:hover {
@@ -24,29 +67,28 @@ button:hover {
 button:active {
     transform: scale(.9);
 }
-#container {
-    width: 100%;
+.projectContainer {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 5px 10px 5px;
+    background-color: rgba(255, 255, 255, 0.253);
+    border: .8px solid rgb(49, 49, 49);
+}
+.headTitle {
+    border-bottom: 1px solid black;
+}
+ul {
+    padding: 0px;
+    list-style: none;
+}
+#contactDiv {
+    padding-top: 4%;
     height: 100%;
 }
-.flexContainer {
-    display: flexbox;
-    align-content: center;
-    text-align: center;
-}
-.unorderedList {
-    width: 50%;
-    padding: 0%;
-    margin: auto;
-}
-li {
-    list-style-position: inside;
-    padding: 0%;
-    margin: 0%;
-    text-align: left;
-}
-#navbar {
-    background-color: rgb(255, 255, 255);
-    border-bottom: 0.8px solid rgb(49, 49, 49);
+#welcomeMessage {
+    position: absolute;
+    margin-left: -10%;
     width: 100%;
-    padding: 10px 0px 10px 0px;
+    height: 100%;
+    background-color: black;
+    display: none;
 }
