@@ -18,7 +18,7 @@ body {
     background-image: url('./siricoProducLogo.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     z-index: -1;
 }
 .flexContainer {
@@ -83,6 +83,9 @@ ul {
 #contactDiv {
     padding-top: 4%;
     height: 100%;
+}
+#contactContainer {
+    background-color: rgba(255, 255, 255, 0) !important;
 }
 #welcomeMessage {
     position: absolute;
