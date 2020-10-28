@@ -1,14 +1,13 @@
-.pageContainer {
-    padding-bottom: 20%;
-    background-color: rgba(255, 255, 255, 0.822);
-    width: 80%;
-    margin-left: 10%;
-}
 body {
     margin: 0%;
     padding: 0%;
     border: 0%;
     font-family: 'Mate SC', serif;
+}
+.pageContainer {
+    padding-bottom: 20%;
+    background-color: rgba(255, 255, 255, 0.822);
+    width: 100%;
 }
 .picturecontainer {
     position: fixed;
