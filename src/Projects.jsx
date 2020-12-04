@@ -10,6 +10,20 @@ export default function Project () {
                 <div className="titleContent">
                     <h1 className="headTitle">Projects</h1>
                     <div className="projectContainer">
+                        <h2>React Quiz</h2>
+                        <h5>This application is built on React.Js and is intended to test your knowledge on it as well! Once you open the app, you will be presented with a button. Upon pressing the button, you will have activated the quiz. Each question allows ten seconds to answer so think fast and have fun!</h5>
+                        <h5>Build</h5>
+                        <ul>
+                            <li>React.JS</li>
+                            <li>CSS</li>
+                            <li>Node.js/Express</li>
+                            <li>Webpack</li>
+                            <li>Babel</li>
+                        </ul>
+                        <h5>Link</h5>
+                        <a href="https://andrewsreactquiz.herokuapp.com/">Andrew's Silly React Quiz!</a>
+                    </div>
+                    <div className="projectContainer">
                         <h2>Dragonball Hangman</h2>
                         <h5>Below is a game I created called Dragonball hangman! This is one of my earlier projects, and although quite simple, it encapsulates the classic hangman experience. Even the most seasoned Dragonball fan will find difficulty in guessing the correct name, but no worries as you can always keep playing just by pressing another key!</h5>
                         <h5>Build</h5>
@@ -48,21 +62,6 @@ export default function Project () {
                         </ul>
                         <h5>Link</h5>
                         <a href="https://ancient-springs-99908.herokuapp.com/">Burgers!</a>
-                    </div>
-                    <div className="projectContainer">
-                        <h2>Fun with Forums</h2>
-                        <h5>This application is designed for a user to log in and create a post for users to see, edit, and delete. Users are allowed to create a post which displays their name, post title, and content of post. Users credentials are saved to Firebase console as well as MySql forums table. When a user creates a post, it joins the username from the forums table with the post title and post content in the card container.</h5>
-                        <h5>Build</h5>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Node.js/Express</li>
-                            <li>Firebase</li>
-                            <li>MySQL</li>
-                        </ul>
-                        <h5>Link</h5>
-                        <a href="https://funwithforums.herokuapp.com/">Fun with Forums</a>
                     </div>
                     <div className="projectContainer">
                         <h2>Found Sound</h2>
