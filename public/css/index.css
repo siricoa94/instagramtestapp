@@ -34,6 +34,13 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
 }
+#aboutWelcomeImage:hover {
+    cursor: pointer;
+    transform: scale(1.00);
+    transition: all 3s ease-in-out;
+    background-image: url('./coolComputerman.png');
+    
+}
 #navDiv {
     position: fixed;
     bottom: 0%;
