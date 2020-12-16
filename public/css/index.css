@@ -72,6 +72,9 @@ button:active {
     background-color: rgba(255, 255, 255, 0.253);
     border: .8px solid rgb(49, 49, 49);
 }
+.projectContainer > h2 {
+    border-bottom: .8px solid black;
+}
 .headTitle {
     border-bottom: 1px solid black;
 }
@@ -93,4 +96,73 @@ ul {
     height: 100%;
     background-color: black;
     display: none;
+}
+/* Project Image containers */
+.projectImgDiv {
+    display: flex;
+    height: 250px;
+    width: 80%;
+    padding-left: 10%;
+    justify-content: center;
+}
+#ricoDepotImgDiv {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('./ricoDepot.png');
+}
+#foundSoundImgDiv {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('./foundSound.png');
+}
+#reactQuizImgDiv {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('./reactQuiz.png');
+}
+#dbHangmanImgDiv {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('./dragonBall.png');
+}
+#hominidImgDiv {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('./hominid.png');
+}
+#burgersImgDiv {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('./burgers.png');
+}
+.projectImgDiv > div:hover {
+    cursor: pointer;
+    transform: scale(1.55);
+    transition: all 3s ease-in-out;
+    background-color: black;
+    
 }
