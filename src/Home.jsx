@@ -24,10 +24,10 @@ export default class Home extends React.Component {
         var windowWidthString = this.state.windowWidth;
         switch(true) {
             case (windowWidthString >= 300 && windowWidthString <= 499): 
-                window.scrollTo({top: 995, behavior: 'smooth'});
+                window.scrollTo({top: 1200, behavior: 'smooth'});
             break;
             case (windowWidthString >= 500 && windowWidthString <= 699): 
-                window.scrollTo({top: 300, behavior: 'smooth'});
+                window.scrollTo({top: 1200, behavior: 'smooth'});
             break;
             case (windowWidthString >= 700 && windowWidthString <= 899): 
                 window.scrollTo({top: 1120, behavior: 'smooth'});
@@ -36,7 +36,7 @@ export default class Home extends React.Component {
                 window.scrollTo({top: 1100, behavior: 'smooth'});
             break;
             case (windowWidthString >= 1100 && windowWidthString <= 2400): 
-                window.scrollTo({top: 1200, behavior: 'smooth'});
+                window.scrollTo({top: 1155, behavior: 'smooth'});
             break;
         }
     }
@@ -58,7 +58,7 @@ export default class Home extends React.Component {
                             <div className="titleContent">
                                 <div className="projectContainer" id="homeProjectContainer">
                                     <h2>Andrew Sirico</h2>
-                                    <Parallax x={[100, -52]}><div id="aboutWelcomeParent"><div id="aboutWelcomeImage"></div></div></Parallax>
+                                    <Parallax x={[100, -62.5]}><div id="aboutWelcomeParent"><div id="aboutWelcomeImage"></div></div></Parallax>
                                     <div id="homeh5div">
                                         <h5>Hi my name is Andrew! Welcome to my portfolio built on ReactJS, Node.js/Express, Webpack, and Babel. This portfolio is here to feature some of my latest projects, some of which utilize the ReactJS frontend framework. I currently work installing HVAC systems into homes and as a freelance web developer, but whenever I have the free time to spend, it  is devoted to developing content and debbuging issues in my code.</h5>
                                         <h5>I am passionate about my work and take pride in the finished product. My work ethic is to always ensure quality product and be positive no matter the task or the challenges involved. Although I like it quiet when I am working, I enjoy being part of something with other people and sharing the feelings of accomplishment after a job well done.</h5>

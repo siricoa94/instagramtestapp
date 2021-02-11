@@ -32,6 +32,26 @@ export default function Project () {
                         </div>
                         <div className="projectContainer">
                             <div className="projectInnerCont">
+                                <h2>SCW</h2>
+                                <div className='projectImgDiv'>
+                                    <div id='scwImgDiv'></div>
+                                </div>
+                                <h5>This application is built on React.Js and spoonacular's API. You can use this application to search for new Cuisine recipies or Wine recommendations. For the Cuisine search you may include an intolerances perameter which will exclude certain meals from your search based on dietary restrictions.</h5>
+                                <h5>Build</h5>
+                                <ul>
+                                    <li>React.JS</li>
+                                    <li>CSS</li>
+                                    <li>Node.js/Express</li>
+                                    <li>Webpack</li>
+                                    <li>Babel</li>
+                                    <li>Spoonacular API</li>
+                                </ul>
+                                <h5>Link</h5>
+                                <a href="https://search-cuisine-siricoa94.herokuapp.com/home">SCW!</a>
+                            </div>
+                        </div>
+                        <div className="projectContainer">
+                            <div className="projectInnerCont">
                                 <h2>Dragonball Hangman</h2>
                                 <div className='projectImgDiv'>
                                     <div id='dbHangmanImgDiv'></div>
