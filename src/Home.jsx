@@ -56,8 +56,8 @@ export default class Home extends React.Component {
                     <div  id="pageContainer">
                         <div className="flexContainer">
                             <div className="titleContent">
-                                <div className="projectContainer" id="homeProjectContainer">
-                                    <h2>Andrew Sirico</h2>
+                                <div className="projectContainer">
+                                    <h2 id="nameHome">Andrew Sirico</h2>
                                     <Parallax x={[100, -62.5]}><div id="aboutWelcomeParent"><div id="aboutWelcomeImage"></div></div></Parallax>
                                     <div id="homeh5div">
                                         <h5>Hi my name is Andrew! Welcome to my portfolio built on ReactJS, Node.js/Express, Webpack, and Babel. This portfolio is here to feature some of my latest projects, some of which utilize the ReactJS frontend framework. I currently work installing HVAC systems into homes and as a freelance web developer, but whenever I have the free time to spend, it  is devoted to developing content and debbuging issues in my code.</h5>
