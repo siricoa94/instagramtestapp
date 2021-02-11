@@ -140,6 +140,7 @@ button:active {
     height: 700px;
     padding: 25px;
     box-shadow: 0px 0px 8px black;
+    background-color: rgba(255, 255, 255, 0.39);
 }
 .projectContainer {
     border-top: 5px solid black;
