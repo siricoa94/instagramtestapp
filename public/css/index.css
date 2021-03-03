@@ -3,9 +3,10 @@ body {
     padding: 0%;
     border: 0%;
     font-family: 'Mate SC', serif;
+    background-color: rgb(197, 207, 204);
 }
 #pageContainer {
-    background-color: rgb(194,208,225);
+    background-color: rgb(37,37,37);
     height: 1000px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,12 +17,26 @@ body {
 #welcomeMessageDiv {
     position: relative;
     width: 100%;
-    background-image: url("https://images.unsplash.com/photo-1581490858520-e0e36d7b3597?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+    background-color: rgb(197, 207, 204);
     height: 1000px;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
     padding-bottom: 110px;
+}
+#contactContainer {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(197, 207, 204);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: rgb(247, 245, 251);
+    /* border-radius: .25rem; */
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.666);
 }
 .welcomeMsgFlexDiv {
     display: flex;
@@ -29,18 +44,26 @@ body {
 }
 #welcomeMsgInner {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.39);
     height: 1100px;
 }
 #moreInfoDivHome{
     width: 100%;
-    background-image: url("https://images.unsplash.com/photo-1581490858520-e0e36d7b3597?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+    background-color: rgb(197, 207, 204);
     height: 1000px;
     background-position: bottom;
 }
+#welcomeImgDisp{
+    background-image: url("./siricoLogo.png");
+    width: 500px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: .3cm;
+    margin-bottom: 50px;
+}
 #moreInfoDivHome > div{
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.39);
     height: 1000px;
     background-position: bottom;
 }
@@ -49,12 +72,14 @@ body {
     align-content: center;
     text-align: center;
     width: 100%;
-    height: 1000px;
-    background-image: url("https://images.unsplash.com/photo-1527657580387-0f1e1aeba8b9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80");
+    height: 100vh;
+    background-image: url("./siricoLogo.png");
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-color: rgb(56,58,60);
     color: rgb(247, 245, 251);
-    border-radius: .25rem;
+    /* border-radius: .25rem; */
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.666);
 }
 #aboutWelcomeParent {
@@ -77,7 +102,7 @@ body {
     position: sticky;
     top: 0%;
     text-align: right;
-    background-color: rgb(45, 49, 66);
+    background-color: rgb(37, 37, 37);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.666);
     width: 100%;
     padding: 10px 0px 10px 0px;
@@ -92,37 +117,38 @@ body {
     height: 30px;
     margin: 7px;
     border-radius: 5rem;
-    color: rgb(219, 84, 97);
+    color: rgb(203, 0, 204);
     font-weight: 900;
     background-color: rgb(247, 245, 251);
     outline: none;
-    border: rgb(104, 40, 47) 4px solid;
+    border: rgb(100, 0, 100) 4px solid;
 }
 .arrowBtn {
     margin-right: 15px;
     margin-left: 2px;
     border-radius: 100%;
-    color: rgb(219, 84, 97);
-    border: rgb(104, 40, 47) 4px solid;
+    color: rgb(203, 0, 204);
+    border: rgb(100, 0, 100) 4px solid;
     font-size: 30px;
     background-color: rgb(247, 245, 251);
     outline: none;
     transition: 0.5s;
 }
-#homeLearnBtn {
-    margin-top: 500px;
+.learnBtn {
+    /* margin-top: 500px; */
     width: 250px;
     height: 35px;
     border-radius: 50rem;
-    border: 1px solid rgb(247, 245, 251);
-    background-color: rgb(68, 68, 68);
-    color: rgb(247, 245, 251);
+    border: none;
+    background-color: rgb(37, 37, 37);
+    color: rgb(0, 255, 0);
     text-shadow: 2px 2px 2px black;
+    box-shadow: 2px 6px 6px rgb(202, 202, 202);
     font-size: 20px;
     outline: none;
 }
 .arrowBtn:hover {
-    box-shadow: 0px 0px 10px rgb(0, 17, 255);
+    box-shadow: 0px 0px 10px rgb(0, 255, 0);
 }
 button:hover {
     transform: scale(1.1);
@@ -132,18 +158,28 @@ button:active {
     transform: scale(.9);
 }
 #flexProjectContainer {
+    display: grid;
+    grid-template-rows: auto auto;
     border-top: 1px solid black;
     border-bottom: 2px solid black;
     border-radius: .25rem;
-    overflow: scroll;
-    overflow-x: hidden;
-    scrollbar-color: black;
     height: 675px;
     padding: 5px;
     box-shadow: 0px 0px 8px black;
     background-color: rgba(255, 255, 255, 0.39);
 }
-.projectContainer {
+.innerProjectGrid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    border-top: 5px solid black;
+    margin-bottom: 10px;
+    background-color: rgba(45, 49, 66, 0.726);
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.666);
+    border-radius: .25rem;
+    color: black;
+}
+.homeContainer {
     border-top: 5px solid black;
     width: 100%;
     margin-bottom: 10px;
@@ -184,10 +220,13 @@ button:active {
 }
 .headTitle {
     width: 300px;
-    border: 15px double rgb(247, 245, 251);
-    background-color: rgba(0, 0, 0, 0.582);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(203, 0, 204);
+    background-color: rgb(37, 37, 36);
     border-radius: .50rem;
-    color: rgb(247, 245, 251);
+    color: rgb(0, 255, 0);
     font-size: 35px;
     text-shadow: 2px 2px 2px black;
 }
@@ -199,7 +238,7 @@ ul {
     color: black;
     background-color: rgba(255, 255, 255, 0.39);
     border-radius: .25rem;
-    height: 50%;
+    height: auto;
     width: 80%;
     margin:auto;
     padding: 10px;
@@ -212,82 +251,185 @@ ul {
     border-bottom: 1px solid black;
 }
 /* Project Image containers */
-.projectImgDiv {
+.projectBrief {
     display: flex;
-    height: 250px;
-    width: 80%;
-    padding-left: 10%;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    background-color: rgb(37, 37, 37);
+    border-radius: .5rem;
+    border: 15px double rgb(203, 0, 204);
+    color:rgb(0, 255, 0);
+    padding: 10px;
+    margin-top: 25px;
+}
+.projectMapDiv {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /* background-color: rgb(194,208,225); */
+    border-top: solid 150px rgb(37, 37, 37);
+    border-bottom: solid 150px rgb(37, 37, 37);
+}
+.clickMeButton {
+    width: 150px;
+    color: rgb(0, 255, 0);
+    height: 35px;
+    border-radius: 50rem;
+    border: none;
+    background-color: rgb(37, 37, 37);
+    text-shadow: 2px 2px 2px black;
+    box-shadow: 2px 6px 6px rgb(202, 202, 202);
+    font-size: 20px;
+    outline: none;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.projectFlexOuter {
+    text-align: center;
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(197, 207, 204);
+    color: rgb(203, 0, 204);
+    /* border-radius: .25rem; */
+    /* text-shadow: 2px 2px 2px black; */
+}
+.projectFlexInner {
+    display: flex;
     justify-content: center;
 }
-#ricoDepotImgDiv {
-    position: relative;
-    width: 80%;
+.projectMapOuter {
+    width: 100%;
     height: 100%;
+    overflow: hidden;
+    background-image: url("https://images.unsplash.com/photo-1443397496996-b312c918b54e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+    background-size: cover;
+    background-position: center;
+}
+.movingBar {
+    width: 100%;
+    height: 25px;
+    background-color: rgb(37, 37, 37);
+}
+.projectFlexOuterBottom {
+    width: 100%;
+    height: 1000px;
+    background-image: url("https://images.unsplash.com/photo-1527657580387-0f1e1aeba8b9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.logoContainer {
+    transition: 1s ease-in-out;
+    margin: 50px;
+}
+.legacyLogo {
+    width: 250px;
+    height: 250px;
+    background-image: url('./legacyImgOne.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 1s ease-in-out;
+    border-radius: .25cm;
+    box-shadow: 1px 1px 8px black;
+}
+.legacyLogo:hover {
+    transform: scale(1.10);
+    transition: 1s ease-in-out;
+}
+.reactLogo {
+    width: 250px;
+    height: 250px;
+    background-image: url('./reactlogo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 1s ease-in-out;
+    border-radius: .25cm;
+    box-shadow: 1px 1px 8px black;
+}
+.reactLogo:hover {
+    transform: scale(1.10);
+    transition: 1s ease-in-out;
+}
+.logoContainer:hover {
+    box-shadow: 0px 0px 100px rgb(0, 255, 0);
+    transition: 1s ease-in-out;
+}
+#RDDiv {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    transition: all 3s ease-in-out;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url('./ricoDepot.png');
-    transition: all 3s ease-in-out;
 }
-#scwImgDiv {
+#SCWDiv {
     position: relative;
-    width: 80%;
-    height: 100%;
+    width: 100%;
+    height: 350px;
+    transition: all 3s ease-in-out;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url('./scw.png');
-    transition: all 3s ease-in-out;
 }
-#foundSoundImgDiv {
+#FSDiv {
     position: relative;
-    width: 80%;
-    height: 100%;
+    width: 100%;
+    height: 350px;
+    transition: all 3s ease-in-out;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url('./foundSound.png');
-    transition: all 3s ease-in-out;
 }
-#reactQuizImgDiv {
+#RQDiv {
     position: relative;
-    width: 80%;
-    height: 100%;
+    width: 100%;
+    height: 350px;
+    transition: all 3s ease-in-out;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url('./reactQuiz.png');
-    transition: all 3s ease-in-out;
 }
-#dbHangmanImgDiv {
+#DBHMDiv {
     position: relative;
-    width: 80%;
-    height: 100%;
+    width: 100%;
+    height: 350px;
+    transition: all 3s ease-in-out;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url('./dragonBall.png');
-    transition: all 3s ease-in-out;
 }
-#hominidImgDiv {
+#HTGDiv {
     position: relative;
-    width: 80%;
-    height: 100%;
+    width: 100%;
+    height: 350px;
+    transition: all 3s ease-in-out;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url('./hominid.png');
-    transition: all 3s ease-in-out;
 }
-#burgersImgDiv {
+#BGSDiv {
     position: relative;
-    width: 80%;
-    height: 100%;
+    width: 100%;
+    height: 350px;
+    transition: all 3s ease-in-out;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url('./burgers.png');
-    transition: all 3s ease-in-out;
 }
 .projectImgDiv > div:hover {
     cursor: pointer;
@@ -295,6 +437,191 @@ ul {
     transition: all 3s ease-in-out;
     background-color: black;
     
+}
+#projectFlexLogoMain{
+    display: flex;
+    justify-content: space-evenly;
+}
+.appType {
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+}
+.projectItemMain {
+    display: "flex";
+    justify-content: center;
+    background-color: rgb(37, 37, 37);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: .3cm;
+}
+.projectItemOuterCont {
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 95%;
+    margin-left: 2.5%;
+    border-radius: .3cm;
+    box-shadow: 4px 4px 4px rgb(96, 96, 96);
+    overflow: hidden;
+}
+.projTitle {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    background-color: rgb(37, 37, 37);
+    border-radius: 0.3cm;
+    color:rgb(0, 255, 0);
+    border: 2px solid rgb(203, 0, 204);
+}
+.projImg {
+    width: 100%;
+    border: none;
+    border-radius: 0.3cm;
+    padding-bottom: 15px;
+}
+.projDesc {
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    border: none;
+    border-radius: 0.3cm;
+    color:rgb(0, 255, 0);
+    padding-bottom: 15px;
+}
+.projBuild {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    width: 300px;
+    border: none;
+    border-radius: 0.3cm;
+    color:rgb(0, 255, 0);
+    padding-bottom: 15px;
+}
+.projLink {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    width: 300px;
+    border: none;
+    border-radius: 0.3cm;
+    color:rgb(0, 255, 0);
+    padding-bottom: 15px;
+}
+.projH {
+    margin-bottom: 0px;
+    color: black;
+    background-color: rgb(0, 255, 0);
+    border-bottom: 2px solid rgb(203, 0, 204);
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+}
+.projHInner {
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(37, 37, 37);
+    border-bottom-left-radius: .3cm;
+    border-bottom-right-radius: .3cm;
+}
+.linkToApp {
+    color:rgb(0, 255, 0);
+}
+.projectItemInnerCont {
+    background-color: rgba(211, 217, 223, 0.904);
+    color: black;
+    border-radius: .3cm;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.999);
+    padding: 25px;
+}
+.gridContainerProject {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 10px;
+}
+@media only screen and (max-width: 800px) {
+    .gridContainerProject {
+        display: grid;
+        grid-template-columns: 100%;
+        padding-top: 10px;
+    }
+    #projectFlexLogoMain{
+        display: initial;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .projectItemMain {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(37, 37, 37);
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-radius: .3cm;
+    }
+    .projectItemOuterCont {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 80%;
+        border-radius: .3cm;
+        box-shadow: 4px 4px 4px rgb(96, 96, 96);
+        overflow: hidden;
+    }
+    .projectItemInnerCont {
+        width: 80%;
+        margin: auto;
+        background-color: rgb(211, 217, 223);
+        color: black;
+        border-radius: .3cm;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.999);
+        border-left: none;
+        border-right: none;
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+    #welcomeImgDisp{
+        background-image: url("./siricoLogo.png");
+        width: 250px;
+        height: 250px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: .3cm;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .projectItemOuterCont {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        margin-left: 0%;
+        border-radius: .3cm;
+        box-shadow: 4px 4px 4px rgb(96, 96, 96);
+        overflow: hidden;
+    }
+    .projectItemInnerCont {
+        width: 80%;
+        margin: auto;
+        background-color: rgb(211, 217, 223);
+        color: black;
+        border-radius: .3cm;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.999);
+        border-left: none;
+        border-right: none;
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
 }
 /* SCROLLBAR */
 /* Works on Firefox */
@@ -316,7 +643,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-    background-color: rgb(45, 49, 66);
+    background-color: rgb(37, 37, 37);
 }
 
 html::-webkit-scrollbar-thumb {

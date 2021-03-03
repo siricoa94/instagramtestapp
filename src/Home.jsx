@@ -6,6 +6,7 @@ export default class Home extends React.Component {
         super(props);
         this.state = { clicked: false, windowWidth: window.innerWidth };
         this.welcomeBtn = this.welcomeBtn.bind(this);
+        this.myDivToFocus = React.createRef();        
     }
 
     componentDidMount() {
@@ -20,24 +21,11 @@ export default class Home extends React.Component {
     }
 
     welcomeBtn() {
-        console.log(this.state.windowWidth);
-        var windowWidthString = this.state.windowWidth;
-        switch(true) {
-            case (windowWidthString >= 300 && windowWidthString <= 499): 
-                window.scrollTo({top: 1200, behavior: 'smooth'});
-            break;
-            case (windowWidthString >= 500 && windowWidthString <= 699): 
-                window.scrollTo({top: 1200, behavior: 'smooth'});
-            break;
-            case (windowWidthString >= 700 && windowWidthString <= 899): 
-                window.scrollTo({top: 1120, behavior: 'smooth'});
-            break;
-            case (windowWidthString >= 900 && windowWidthString <= 1099): 
-                window.scrollTo({top: 1100, behavior: 'smooth'});
-            break;
-            case (windowWidthString >= 1100 && windowWidthString <= 2400): 
-                window.scrollTo({top: 1155, behavior: 'smooth'});
-            break;
+        if(this.myDivToFocus.current){
+            this.myDivToFocus.current.scrollIntoView({ 
+               behavior: "smooth", 
+               block: "end"
+            });
         }
     }
 
@@ -48,17 +36,18 @@ export default class Home extends React.Component {
                     <div className="welcomeMsgFlexDiv" id="welcomeMsgInner">
                         <div>
                             <h1 className="headTitle">Welcome</h1>
-                            <button onClick={this.welcomeBtn} id="homeLearnBtn">Learn More</button>
+                            <div id="welcomeImgDisp"></div>
+                            <button onClick={this.welcomeBtn} className="learnBtn">Learn More</button>
                         </div>
                     </div>
                 </div>
                 <Parallax y={[-20, 20]}>
-                    <div  id="pageContainer">
+                    <div  id="pageContainer" ref={this.myDivToFocus}>
                         <div className="flexContainer">
                             <div className="titleContent">
-                                <div className="projectContainer">
+                                <div className="homeContainer">
                                     <h2 id="nameHome">Andrew Sirico</h2>
-                                    <Parallax x={[100, -62.5]}><div id="aboutWelcomeParent"><div id="aboutWelcomeImage"></div></div></Parallax>
+                                    <Parallax y={[5, -5]}><div id="aboutWelcomeParent"><div id="aboutWelcomeImage"></div></div></Parallax>
                                     <div id="homeh5div">
                                         <h5>Hi my name is Andrew! Welcome to my portfolio built on ReactJS, Node.js/Express, Webpack, and Babel. This portfolio is here to feature some of my latest projects, some of which utilize the ReactJS frontend framework. I currently work installing HVAC systems into homes and as a freelance web developer, but whenever I have the free time to spend, it  is devoted to developing content and debbuging issues in my code.</h5>
                                         <h5>I am passionate about my work and take pride in the finished product. My work ethic is to always ensure quality product and be positive no matter the task or the challenges involved. Although I like it quiet when I am working, I enjoy being part of something with other people and sharing the feelings of accomplishment after a job well done.</h5>
